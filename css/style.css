@@ -113,7 +113,9 @@ header {
     color: var(--color-grai);
 }
 .intro__text-botton {
-    
+    color: #fff;
+    margin-top: 33px;
+    margin-right: 35px;
 }
 .intro__img {
     width: 40%;
