@@ -56,7 +56,7 @@ html,body {
 
 /* Header */
 header {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 80px;
     height: 100vh;
