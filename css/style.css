@@ -41,6 +41,7 @@
 }
 html,body {
     height: 100%;
+    background-color: #0f1528;
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     color: var(--color-white);
