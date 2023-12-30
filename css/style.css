@@ -63,7 +63,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
+    backdrop-filter: blur(10px);
     z-index: 1;
 }
 .header__inner {
@@ -88,8 +89,9 @@ header {
     height: 30px;
 }
 .header__logo {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-turquoise);
+    font-family: 'minecraft';
 }
 
 .header__nav {
@@ -188,4 +190,9 @@ header {
         transform: rotate(360deg);
         opacity: .4;
       }
+}
+
+/*  */
+.social {
+    height: 100vh;
 }
