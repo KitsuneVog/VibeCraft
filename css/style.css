@@ -42,7 +42,7 @@
 html,body {
     height: 100%;
     background-color: #0f1528;
-    background-image: url(../images/bg.png);
+    /* background-image: url(../images/bg.png); */
     background-repeat: no-repeat;
     color: var(--color-white);
     line-height: var(--line-height);
@@ -58,66 +58,53 @@ html,body {
 /* Header */
 header {
     position: fixed;
-    left: 0;
-    width: 80px;
-    height: 100vh;
+    top: 0;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: var(--color-dark);
     z-index: 1;
 }
 .header__inner {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    justify-content: space-between;
+    height: 70%;
     width: 100%;
-    padding: 0 10px;
-}
-.header__inner span {
-    display: none;
-    color: #fff;
-    text-transform: uppercase;
-}
+    padding: 5px 0;
 
+    border-bottom: 2px solid rgba(0, 217, 255, .3);
+}
+.header__social {
+    display: flex;
+    align-items: center;
+}
 .header__logo {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 .header__logo img {
-    height: 70px;
+    height: 30px;
 }
-.header__logo a {
+.header__logo {
     font-size: 25px;
     color: var(--color-turquoise);
 }
 
 .header__nav {
+    height: 30%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-	font-size: 16px;
-    gap: 30px;
-    list-style:none;
-    padding-bottom: 20px;
-    justify-content: end;
-    align-items: center;
-}
-.header__nav img {
-    height: 60px;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    padding: 5px 0;
 }
 .header__nav a {
-    display: flex;
-    gap: 10px;
-}
-.active {
-    
-}
-.header__botton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 20px;
+    font-size: 13px;
+    color: var(--color-white);
+    font-family: 'minecraft';
 }
 
 /* Intro */
@@ -173,4 +160,32 @@ header {
 .intro_arrow_img:hover {
     opacity: 1;
     margin-top: 10px;
+}
+
+.stars {
+    width: 3px;
+    height: 3px;
+    background: var(--color-white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:50%;
+    transform-origin: 0 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    animation: rotate 270s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        opacity: .6;
+    }
+      50% {
+        opacity: .9;
+      }
+      100% {
+        transform: rotate(360deg);
+        opacity: .4;
+      }
 }
