@@ -157,6 +157,7 @@ header {
 .intro__arrow > svg {
     width: 36px;
     height: 32px;
+    transform: translateX(-15px);
     opacity: .7;
     fill: var(--color-turquoise);
     filter: drop-shadow(0 4px 16px rgba(0, 217, 255, .5));
