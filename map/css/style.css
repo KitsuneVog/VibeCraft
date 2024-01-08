@@ -1,0 +1,234 @@
+@font-face {
+	font-family: 'minecraft'; 
+	src: url(../fonts/minecraft.ttf); 
+}
+
+:root {
+    --color-dark: #1c232f;
+    --color-grai: #888;
+    --color-white: #ccc;
+    --color-turquoise: #00d9ff;
+
+    --line-height: 1.85;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #424242;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    width: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #606060;
+}
+
+::-moz-selection {
+    background-color: #7FC7FF;
+    color: #fff;
+}
+::selection {
+    background-color: #7FC7FF;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body {
+    height: 100%;
+    background-color: #0f1528;
+    /* background-image: url(../images/bg.png); */
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    line-height: var(--line-height);
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: var(--color-dark); */
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+    padding: 5px 0;
+
+    border-bottom: 2px solid rgba(0, 217, 255, .3);
+}
+.header__social {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header__logo img {
+    height: 30px;
+}
+.header__logo {
+    font-size: 20px;
+    color: var(--color-turquoise);
+    text-shadow: var(--color-turquoise) 1px 0 5px;
+    font-family: 'minecraft';
+}
+
+.header__nav {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    padding: 5px 0;
+}
+.header__nav a {
+    font-size: 13px;
+    color: var(--color-white);
+    font-family: 'minecraft';
+}
+
+/* Intro */
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro__content {
+    width: 50%;
+    font-family: 'minecraft';
+}
+.intro__main_title {
+    font-size: 42px;
+    line-height: calc(var(--line-height) / 1.35);
+}
+.intro__title {
+    font-size: 17px;
+    line-height: var(--line-height);
+    color: var(--color-grai);
+}
+.intro__botton {
+    color: #fff;
+    margin-top: 33px;
+    margin-right: 35px;
+}
+.intro__image {
+    pointer-events: none;
+}
+.intro__image_img {
+    height: 400px;
+}
+.intro__arrow {
+    top: 90%;
+    position: absolute;
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+}
+.intro__arrow > svg {
+    width: 36px;
+    height: 32px;
+    transform: translateX(-15px);
+    opacity: .7;
+    fill: var(--color-turquoise);
+    filter: drop-shadow(0 4px 16px rgba(0, 217, 255, .5));
+    transition: all .3s ease-in-out;
+}
+.intro__arrow > svg:hover {
+    opacity: 1;
+    filter: drop-shadow(0 4px 16px rgba(0, 217, 255, .8));
+    margin-top: 10px;
+}
+
+.stars {
+    width: 3px;
+    height: 3px;
+    background: var(--color-white);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform-origin: 0 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    animation: rotate 270s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        opacity: .6;
+    }
+      50% {
+        opacity: .9;
+      }
+      100% {
+        transform: rotate(360deg);
+        opacity: .4;
+      }
+}
+
+/* About_server */
+.about_server__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: .6px;
+    padding-top: 35px;
+}
+.title_line {
+    width: 92px;
+    height: 2px;
+    margin-top: 12px;
+    background: var(--color-turquoise);
+    box-shadow: 0 4px 16px rgba(0, 217, 255, 0.6);
+}
+.title_description_text {
+    padding-top: 35px;
+    padding-bottom: 75px;
+    width: 760px;
+    color: var(--color-grai);
+    font-family: 'minecraft';
+    font-size: 14px;
+}
+
+/* Footer */
+.social {
+    height: 100vh;
+}
