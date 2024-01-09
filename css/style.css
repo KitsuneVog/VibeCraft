@@ -108,6 +108,12 @@ header {
     color: var(--color-white);
     font-family: 'minecraft';
 }
+.active > a{
+    color: var(--color-turquoise);
+}
+.disabled > a{
+    color: rgba(136, 136, 136, .4);
+}
 
 /* Intro */
 .intro {
