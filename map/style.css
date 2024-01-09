@@ -1,0 +1,8 @@
+#map {
+    touch-action: auto;
+    overflow: auto;
+    zoom: 350%;
+}
+#map::-webkit-scrollbar {
+    width: 0px;
+}
