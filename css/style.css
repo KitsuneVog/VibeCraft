@@ -230,12 +230,10 @@ header {
 /* Map */
 .map {
     position: relative;
-    margin: 88.6px auto 20px auto;
-    height: calc(100vh - 88.6px);
+    margin: 0 auto 0 auto;
+    height: 100vh;
     width: 100vw;
-    overflow: hidden;
     background-color: var(--color-dark);
-    border: 2px solid var(--color-turquoise);
     cursor: grab;
 }
 .map > iframe {

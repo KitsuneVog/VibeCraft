@@ -4,5 +4,5 @@
     zoom: 350%;
 }
 #map::-webkit-scrollbar {
-    width: 0px;
+    display: none;
 }
