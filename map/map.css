@@ -1,7 +1,11 @@
+body {
+    background-color: transparent;
+}
 #map {
     touch-action: auto;
     overflow: auto;
     zoom: 350%;
+    background-color: transparent;
 }
 #map::-webkit-scrollbar {
     display: none;

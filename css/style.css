@@ -242,7 +242,6 @@ header {
     margin: 0 auto 0 auto;
     height: 100vh;
     width: 100vw;
-    background-color: var(--color-dark);
     cursor: grab;
 }
 .map > iframe {
