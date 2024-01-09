@@ -45,7 +45,7 @@ var isCall = false;
     if(!isCall){
     var zoom = 1;
     isCall = true;//Чтобы начальное значение было присвоено 1 раз
-    }
+};
 
 //Функция для добавления обработчика событий
 function addHandler(object, event, handler){
@@ -54,7 +54,7 @@ function addHandler(object, event, handler){
     }else if(object.attachEvent){
     object.attachEvent('on' + event, handler);
     }else alert("Обработчик не поддерживается");
-    }
+};
 
 // Добавляем обработчики для разных браузеров
 addHandler(window, 'DOMMouseScroll', wheel);
@@ -93,4 +93,4 @@ event = event || window.event;
     document.body.style.OTransform = zoom; // для Opera
     document.body.style.zoom = zoom;
     }
-    }
+};
