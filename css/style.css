@@ -226,6 +226,9 @@ header {
     font-family: 'minecraft';
     font-size: 14px;
 }
+.title_description_text > strong {
+    color: rgb(163, 163, 163);
+}
 
 /* Map */
 .map {
