@@ -5,7 +5,7 @@
 
 :root {
     --color-dark: #1c232f;
-    --color-grai: #888;
+    --color-grai: #aaa;
     --color-white: #ccc;
     --color-turquoise: #00d9ff;
 
@@ -41,16 +41,14 @@
 }
 html,body {
     background-color: #0f1528;
-    /* background-image: url(../images/bg.png); */
     background-repeat: no-repeat;
-    color: var(--color-white);
     line-height: var(--line-height);
 }
 
 .container {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 0 15px;
 }
 
@@ -62,7 +60,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: var(--color-dark); */
     backdrop-filter: blur(5px);
     z-index: 1000;
 }
@@ -104,7 +101,7 @@ header {
     padding: 5px 0;
 }
 .header__nav a {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--color-white);
     font-family: 'minecraft';
 }
@@ -134,10 +131,11 @@ header {
 }
 .intro__main_title {
     font-size: 42px;
+    color: var(--color-white);
     line-height: calc(var(--line-height) / 1.35);
 }
 .intro__title {
-    font-size: 17px;
+    font-size: 18px;
     line-height: var(--line-height);
     color: var(--color-grai);
 }
@@ -181,7 +179,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin-inline: auto;
     top: 50%;
     transform-origin: 0 0;
     transform: translateY(-50%);
@@ -211,10 +209,10 @@ header {
     text-align: center;
     color: var(--color-grai);
     font-family: 'minecraft';
-    font-size: 14px;
+    font-size: 17px;
 }
 .title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     color: var(--color-white);
     letter-spacing: .6px;
@@ -229,7 +227,6 @@ header {
 }
 .title_description_text {
     padding-top: 35px;
-    width: 760px;
 }
 .about_server__inner > .server {
     display: inline-flex;
@@ -239,7 +236,7 @@ header {
 /* Map */
 .map {
     position: relative;
-    margin: 0 auto 0 auto;
+    margin-inline: auto;
     height: 100vh;
     width: 100vw;
     cursor: grab;
