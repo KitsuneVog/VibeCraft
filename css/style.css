@@ -231,8 +231,8 @@ header {
 .map {
     position: relative;
     margin: 88.6px auto 20px auto;
-    height: calc(98vh - 88.6px);
-    width: 95vw;
+    height: calc(100vh - 88.6px);
+    width: 100vw;
     overflow: hidden;
     background-color: var(--color-dark);
     border: 2px solid var(--color-turquoise);
