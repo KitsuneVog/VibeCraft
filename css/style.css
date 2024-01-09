@@ -209,6 +209,9 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: var(--color-grai);
+    font-family: 'minecraft';
+    font-size: 14px;
 }
 .title {
     font-size: 30px;
@@ -226,14 +229,11 @@ header {
 }
 .title_description_text {
     padding-top: 35px;
-    padding-bottom: 75px;
     width: 760px;
-    color: var(--color-grai);
-    font-family: 'minecraft';
-    font-size: 14px;
 }
-.title_description_text > strong {
-    color: rgb(163, 163, 163);
+.about_server__inner > .server {
+    display: inline-flex;
+    gap: 10px;
 }
 
 /* Map */
