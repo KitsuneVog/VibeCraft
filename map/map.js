@@ -30,8 +30,8 @@ document.addEventListener('mousemove', (e) => {
   e.preventDefault();
   const x = e.pageX - box.offsetLeft;
   const y = e.pageY - box.offsetTop;
-  const walkX = (x - startX) * 1; // Change this number to adjust the scroll speed
-  const walkY = (y - startY) * 1; // Change this number to adjust the scroll speed
+  const walkX = (x - startX) * 0.2; // Change this number to adjust the scroll speed
+  const walkY = (y - startY) * 0.2; // Change this number to adjust the scroll speed
   box.scrollLeft = scrollLeft - walkX;
   box.scrollTop = scrollTop - walkY;
 });
