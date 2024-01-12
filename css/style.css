@@ -47,7 +47,7 @@ html,body {
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1500px;
     margin-inline: auto;
     padding: 0 15px;
 }
@@ -75,6 +75,7 @@ header {
 .header__social {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .header__logo {
     display: flex;
@@ -110,6 +111,7 @@ header {
 }
 .disabled > a{
     color: rgba(136, 136, 136, .4);
+    pointer-events: none;
 }
 
 /* Intro */
@@ -118,49 +120,61 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
 }
 .intro__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .intro__content {
-    width: 50%;
+    width: 100%;
     font-family: 'minecraft';
+    text-align: center;
 }
 .intro__main_title {
-    font-size: 42px;
+    font-size: 50px;
     color: var(--color-white);
     line-height: calc(var(--line-height) / 1.35);
 }
 .intro__title {
-    font-size: 18px;
+    font-size: 25px;
     line-height: var(--line-height);
     color: var(--color-grai);
 }
+.intro__title span {
+    color: var(--color-turquoise);
+}
+.intro__suptitle {
+    width: 518px;
+    font-size: 15px;
+    line-height: calc(var(--line-height) / 1.25);;
+    color: var(--color-grai);
+    margin-top: 50px;
+    margin-inline: auto;
+}
 .intro__botton {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
     color: #fff;
-    margin-top: 33px;
-    margin-right: 35px;
-}
-.intro__image {
-    pointer-events: none;
-}
-.intro__image_img {
-    height: 400px;
+    text-align: center;
+    margin-top: 60px;
+    margin-inline: auto;
 }
 .intro__arrow {
     top: 90%;
     position: absolute;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     height: 60px;
     text-align: center;
 }
 .intro__arrow > svg {
     width: 36px;
     height: 32px;
-    transform: translateX(-10px);
     opacity: .7;
     fill: var(--color-turquoise);
     filter: drop-shadow(0 4px 16px rgba(0, 217, 255, .5));
@@ -249,4 +263,19 @@ header {
 /* Footer */
 .social {
     height: 100vh;
+}
+
+@media (max-width: 1100px) {
+    /* Header */
+    .header__logo span {
+        display: none;
+    }
+    
+    /* Intro */
+    .intro__inner {
+        justify-content: center;
+    }
+    .intro__content {
+        text-align: center;
+    }
 }
