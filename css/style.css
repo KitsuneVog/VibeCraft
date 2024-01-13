@@ -115,7 +115,7 @@ header {
 }
 .header__nav a:hover {
     color: var(--color-turquoise);
-    opacity: .6;
+    opacity: .8;
 }
 .active > a{
     color: var(--color-turquoise);
