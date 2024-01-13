@@ -6,7 +6,7 @@
 :root {
     --color-dark: #1c232f;
     --color-grai: #aaa;
-    --color-white: #ccc;
+    --color-white: #ececec;
     --color-turquoise: #00d9ff;
 
     --line-height: 1.85;
@@ -188,7 +188,7 @@ header {
     width: auto;
     height: 36px;
     padding: .25em;
-    color: #fff;
+    color: var(--color-white);
     font-size:17px;
     font-weight: 400;
     line-height: 45px;
