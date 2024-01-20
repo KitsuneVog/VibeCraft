@@ -142,15 +142,26 @@ header {
     width: 100%;
 }
 .intro__inner {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+.intro__inner img {
+    position: absolute;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+    height: 150%;
+    opacity: .3;
+    z-index: 0;
+}
 .intro__content {
     width: 100%;
     font-family: 'minecraft';
     text-align: center;
+    z-index: 1;
 }
 .intro__main_title {
     font-size: 50px;
@@ -260,11 +271,13 @@ header {
       }
 }
 
-/* About_server */
-.about_server__inner {
+/* Info */
+.info__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 35px;
+    margin-bottom: 35px;
     align-items: center;
     text-align: center;
     color: var(--color-grai);
@@ -276,7 +289,6 @@ header {
     font-weight: 800;
     color: var(--color-white);
     letter-spacing: .6px;
-    padding-top: 35px;
 }
 .title_line {
     width: 92px;
@@ -288,9 +300,33 @@ header {
 .title_description_text {
     padding-top: 35px;
 }
-.about_server__inner > .server {
+
+/* About_server_Info */
+.info__inner > .server {
     display: inline-flex;
     gap: 10px;
+}
+
+/* Join_Info */
+.join_steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    width: 100%;
+    align-items: center;
+}
+.join_steps img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.steps {
+    text-align: start;
+    list-style-type: upper-roman;
+    align-items: center;
+}
+.steps li {
+    
 }
 
 /* Map */
