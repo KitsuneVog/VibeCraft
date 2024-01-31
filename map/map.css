@@ -1,12 +1,6 @@
 body {
     background-color: transparent;
 }
-#map {
-    touch-action: auto;
-    overflow: auto;
-    zoom: 350%;
+.dynmap .map {
     background-color: transparent;
-}
-#map::-webkit-scrollbar {
-    display: none;
 }

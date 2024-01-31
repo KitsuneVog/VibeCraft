@@ -342,12 +342,8 @@ header {
 .map > iframe {
     position: absolute;
     bottom: 0;
-    height: calc(100% - 51.59px); /*вычитание header*/
+    height: calc(100% - 51.4px); /*вычитание header*/
     width: 100%;
-    /* margin-top: 51.59px; */
-}
-.dynmap map{
-    background-color: transparent;
 }
 
 /* Footer */
