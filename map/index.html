@@ -31,8 +31,21 @@
     <header>
         <div class="container">
             <div class="header__inner">
-                <div class="header__burger header__logo">
-                    <a class="header__logo" href=""><img src="../images/jelly-map-with-mark.png" alt=""></a>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+
+                    <ul class="menu-list">
+                        <li><a href="../" class="menu-item">О сервере</a><li>
+
+                        <li class="active"><a href="" class="menu-item">Карта</a><li>
+
+                        <li><a href="../rules" class="menu-item">Правила</a><li>
+
+                        <li class="disabled"><a href="" class="menu-item">Вики</a><li>
+                            
+                        <li class="disabled"><a href="" class="menu-item">Донаты</a><li>
+                    </ul>
                 </div>
 
                 <a class="header__logo" href="../">
@@ -46,7 +59,7 @@
                     <li class="active">
                         <a href="">Карта</a>
                     </li>
-                    <li class="disabled">
+                    <li>
                         <a href="../rules">Правила</a>
                     </li>
                     <li class="disabled">

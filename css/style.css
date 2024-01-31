@@ -73,9 +73,6 @@ header {
 
     border-top: 2px solid rgba(0, 217, 255, .7);
 }
-/* .header__burger {
-    display: none;
-} */
 .header__logo {
     display: flex;
     align-items: center;
@@ -90,13 +87,6 @@ header {
 .header__logo img {
     height: 30px;
 }
-
-
-.header__burger {
-    display: none;
-}
-
-
 .header__nav {
     height: 30%;
     width: 100%;
@@ -131,6 +121,87 @@ header {
     align-items: center;
     gap: 10px;
     margin-left: auto;
+}
+
+/* Header_Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+}
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--color-turquoise);
+}
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 var(--color-turquoise);
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0, 217, 255,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: rgba(15, 21, 40, .6);
+    list-style-type: none;
+    transform: translateY(-100%);
+    transition: .3s;
+    width: 100vw;
+    height: 100vh;
+}
+.menu-item {
+    display: block;
+    padding: 8px;
+    color: var(--color-white);
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
 }
 
 /* Intro */
@@ -353,7 +424,7 @@ header {
 
 @media (max-width: 1100px) {
     /* Header */
-    .header__burger {
+    .header__menu {
         display: block;
     }
     .header__nav {
@@ -370,5 +441,10 @@ header {
     .intro__button {
         margin-top: 15px;
         grid-auto-flow: row;
+    }
+
+    /* Join_Info */
+    .join_steps {
+        grid-template-columns: 1fr;
     }
 }
