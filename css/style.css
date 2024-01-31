@@ -124,8 +124,8 @@ header {
 }
 
 /* Header_Menu */
-.menu {
-    display: flex;
+.header__menu {
+    display: none;
     align-items: center;
 }
 .burger-checkbox {
@@ -425,7 +425,7 @@ header {
 @media (max-width: 1100px) {
     /* Header */
     .header__menu {
-        display: block;
+        display: flex;
     }
     .header__nav {
         display: none;
