@@ -4,6 +4,7 @@
 }
 
 :root {
+    --color-bg: #0f1528;
     --color-dark: #1c232f;
     --color-grai: #aaa;
     --color-white: #ececec;
@@ -14,14 +15,14 @@
 
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: #424242;
+    background-color: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     width: 8px;
     border: 4px solid transparent;
     background-clip: content-box;
-    background-color: #606060;
+    background-color: rgba(0, 217, 255, .6);
 }
 
 ::-moz-selection {
@@ -40,7 +41,7 @@
     text-decoration: none;
 }
 html,body {
-    background-color: #0f1528;
+    background-color: var(--color-bg);
     background-repeat: no-repeat;
     line-height: var(--line-height);
 }
@@ -142,20 +143,10 @@ header {
     width: 100%;
 }
 .intro__inner {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-.intro__inner img {
-    position: absolute;
-    margin-inline: auto;
-    left: 0;
-    right: 0;
-    height: 150%;
-    opacity: .3;
-    z-index: 0;
 }
 .intro__content {
     width: 100%;
@@ -223,11 +214,11 @@ header {
     text-shadow: 1px 1px 2px #427388; 
   }
 .intro__arrow {
-    top: 90%;
     position: absolute;
+    top: 90%;
     width: 100%;
     max-width: 1100px;
-    height: 60px;
+    height: 31px;
     text-align: center;
 }
 .intro__arrow > svg {
@@ -316,17 +307,29 @@ header {
     align-items: center;
 }
 .join_steps img {
+    position: relative;
     height: 300px;
     width: 300px;
     border-radius: 100%;
+    margin-inline: auto;
 }
 .steps {
     text-align: start;
     list-style-type: upper-roman;
     align-items: center;
+    line-height: 40px;
 }
 .steps li {
-    
+    color: var(--color-white);
+}
+.steps li p {
+    color: var(--color-grai);
+}
+.steps li a {
+    color: var(--color-white);
+}
+.steps li span {
+    color: var(--color-white);
 }
 
 /* Map */
@@ -335,12 +338,16 @@ header {
     margin-inline: auto;
     height: 100vh;
     width: 100vw;
-    cursor: grab;
 }
 .map > iframe {
-    height: calc(100% - 51.59px);
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 51.59px); /*вычитание header*/
     width: 100%;
-    margin-top: 51.59px;
+    /* margin-top: 51.59px; */
+}
+.dynmap map{
+    background-color: transparent;
 }
 
 /* Footer */
