@@ -202,9 +202,9 @@ header {
 }
 .menu-item {
     display: block;
-    padding: 8px;
+    padding: clamp(0px, 1vh, 8px);
     color: var(--color-white);
-    font-size: 28px;
+    font-size: clamp(16px, 4vh, 30px);
     text-align: center;
     text-decoration: none;
 }
@@ -237,12 +237,12 @@ header {
     z-index: 1;
 }
 .intro__main_title {
-    font-size: 50px;
+    font-size: clamp(22px, 11vw, 50px);
     color: var(--color-white);
     line-height: calc(var(--line-height) / 1.45);
 }
 .intro__title {
-    font-size: 25px;
+    font-size: clamp(18px, 3.3vw, 25px);
     line-height: var(--line-height);
     color: var(--color-grai);
 }
@@ -251,7 +251,7 @@ header {
 }
 .intro__suptitle {
     max-width: 555px;
-    font-size: 17px;
+    font-size: clamp(17px, 3.5vw, 20px);
     line-height: calc(var(--line-height) / 1.25);;
     color: var(--color-grai);
     margin-top: 30px;
@@ -273,7 +273,7 @@ header {
     height: 36px;
     padding: .25em;
     color: var(--color-white);
-    font-size:17px;
+    font-size: clamp(14px, 4vw, 18px);
     font-weight: 400;
     line-height: 45px;
 
@@ -354,7 +354,6 @@ header {
     text-align: center;
     color: var(--color-grai);
     font-family: 'minecraft';
-    font-size: 17px;
 }
 .title {
     font-size: 20px;
@@ -371,6 +370,8 @@ header {
 }
 .title_description_text {
     padding-top: 35px;
+    max-width: 750px;
+    font-size: clamp(17px, 2.3vw, 20px);
 }
 
 /* About_server_Info */
@@ -397,6 +398,7 @@ header {
 .steps {
     text-align: start;
     list-style-type: upper-roman;
+    font-size: clamp(16px, 2.7vw, 20px);
     line-height: 40px;
 }
 .steps li {
@@ -432,7 +434,7 @@ header {
 
     color: var(--color-grai);
     font-family: 'minecraft';
-    font-size: 17px;
+    font-size: clamp(17px, 5vw, 20px);
 }
 .rules__inner {
     margin-inline: auto;
