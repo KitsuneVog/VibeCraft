@@ -1,7 +1,3 @@
-// $('.menu').click (function(){
-//     $(this).toggleClass('open');
-// });
-
 function showStars () {
     var boxshadow = "";
 
