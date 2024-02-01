@@ -98,7 +98,7 @@ header {
 .header__logo img {
     height: 30px;
 }
-.header__nav {
+.header__nav ul {
     height: 30%;
     width: 100%;
     display: flex;
@@ -397,7 +397,6 @@ header {
 .steps {
     text-align: start;
     list-style-type: upper-roman;
-    align-items: center;
     line-height: 40px;
 }
 .steps li {
@@ -486,7 +485,7 @@ header {
     height: 100vh;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     /* Header */
     .header__menu {
         display: flex;
@@ -510,5 +509,9 @@ header {
     /* Join_Info */
     .join_steps {
         grid-template-columns: 1fr;
+    }
+    .steps {
+        margin-top: 30px;
+        margin-inline: auto;
     }
 }
