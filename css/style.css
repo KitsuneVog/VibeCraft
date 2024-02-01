@@ -516,4 +516,8 @@ header {
         margin-top: 30px;
         margin-inline: auto;
     }
+
+    .rules__list_content {
+	display: none;
+    }
 }
