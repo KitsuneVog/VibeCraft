@@ -517,7 +517,7 @@ header {
         margin-inline: auto;
     }
 
-    .rules__list_content {
-	display: none;
+    .rules__list_content {
+	    display: none;
     }
 }
