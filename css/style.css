@@ -15,7 +15,7 @@
 
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: var(--color-bg);
+    background-color: #071526;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
@@ -464,12 +464,18 @@ header {
 .rules__list_content {
     position: fixed;
     top: 52.39px;
-    right: 0;
+    right: 5px;
     max-width: 300px;
     width: 100%;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.rules__list_content.border {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 10px;
 }
 .rules__list_content h2 {
     font-size: 17px;
@@ -477,6 +483,8 @@ header {
 }
 .rules__list_content li {
     font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 4px;
 }
 .rules__list_content a {
     color: var(--color-grai);
