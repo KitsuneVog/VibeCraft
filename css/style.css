@@ -474,7 +474,7 @@ header {
 }
 .rules__list_content.border {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
 }
 .rules__list_content h2 {
