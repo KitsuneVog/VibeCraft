@@ -434,7 +434,7 @@ header {
 
     color: var(--color-grai);
     font-family: 'minecraft';
-    font-size: clamp(17px, 5vw, 20px);
+    font-size: clamp(15px, 1.8vw, 17px);
 }
 .rules__inner {
     margin-inline: auto;
